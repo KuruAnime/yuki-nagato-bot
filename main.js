@@ -8,7 +8,10 @@ Client.on('ready', () => {
 
 // Main Code
 Client.on('message', message => {
-
+    if (message.author.id === '496908630965092352') {
+        message.delete();
+        message.channel.send(parameter);
+    }
 });
 
 // Discord Login
