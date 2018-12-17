@@ -10,7 +10,7 @@ Client.on('ready', () => {
 Client.on('message', message => {
     if (message.author.id === '496908630965092352') {
         message.delete();
-        message.channel.send(parameter);
+        message.channel.send(message.content);
     }
 });
 
